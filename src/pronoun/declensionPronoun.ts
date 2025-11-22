@@ -198,7 +198,7 @@ export function declensionPronoun(
         columns: ['Word Form'],
         cases: {
           nom: [prefix + 'čto' + postfix],
-          acc: [prefix + 'čego' + postfix],
+          acc: [prefix + 'čto' + postfix],
           gen: [prefix + 'čego' + postfix],
           loc: [prefix + 'čem' + postfix],
           dat: [prefix + 'čemu' + postfix],

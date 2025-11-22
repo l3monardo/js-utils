@@ -236,7 +236,7 @@ exports[`renderers HTML pronoun declension noun type renderDiff 1`] = `
     </tr>
     <tr>
       <th>Acc.</th>
-      <td><del>kogo</del> <ins>čego</ins></td>
+      <td><del>kogo</del> <ins>čto</ins></td>
     </tr>
     <tr>
       <th>Gen.</th>

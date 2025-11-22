@@ -62,7 +62,7 @@ exports[`pronoun indefinite 307 1`] = `
 {
   "cases": {
     "acc": [
-      "inočego",
+      "inočto",
     ],
     "dat": [
       "inočemu",
@@ -176,7 +176,7 @@ exports[`pronoun indefinite 1675 1`] = `
 {
   "cases": {
     "acc": [
-      "vsečego",
+      "vsečto",
     ],
     "dat": [
       "vsečemu",
@@ -261,7 +261,7 @@ exports[`pronoun indefinite 1786 1`] = `
 {
   "cases": {
     "acc": [
-      "čego-nebųď",
+      "čto-nebųď",
     ],
     "dat": [
       "čemu-nebųď",
@@ -740,7 +740,7 @@ exports[`pronoun indefinite 14502 1`] = `
 {
   "cases": {
     "acc": [
-      "čego-libo",
+      "čto-libo",
     ],
     "dat": [
       "čemu-libo",
@@ -881,7 +881,7 @@ exports[`pronoun indefinite 19602 1`] = `
 {
   "cases": {
     "acc": [
-      "čegokoli",
+      "čtokoli",
     ],
     "dat": [
       "čemukoli",
@@ -1022,7 +1022,7 @@ exports[`pronoun indefinite 19882 1`] = `
 {
   "cases": {
     "acc": [
-      "něčego",
+      "něčto",
     ],
     "dat": [
       "něčemu",
@@ -1051,7 +1051,7 @@ exports[`pronoun indefinite 19913 1`] = `
 {
   "cases": {
     "acc": [
-      "ničego",
+      "ničto",
     ],
     "dat": [
       "ničemu",
