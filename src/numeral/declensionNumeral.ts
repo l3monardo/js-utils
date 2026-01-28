@@ -34,8 +34,8 @@ const exclusionList = {
     ['masculine', 'feminine/neuter'],
   ],
   obadva: [
-    'obadva|obadvě',
-    'obadva / obadvoh|obadvě',
+    'obadva|obědvě',
+    'obadva / obadvoh|obědvě',
     'obadvoh',
     'obadvom',
     'obadvoma',
