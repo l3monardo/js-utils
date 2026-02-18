@@ -256,7 +256,7 @@ export function declensionPronoun(
       },
       casesPlural: {
         nom: ['jejni / jejne', 'jejne'],
-        acc: ['jejnyh / jejne', 'jene'],
+        acc: ['jejnyh / jejne', 'jejne'],
         gen: ['jejnyh'],
         loc: ['jejnyh'],
         dat: ['jejnym'],
