@@ -16,7 +16,7 @@ const exclusionList = {
         'dvom',
         'dvoma',
         'dvoh',
-        ['masculine/neuter', 'feminine'],
+        ['masculine/neuter', 'feminine/neuter'],
     ],
     oba: [
         'oba|obě',
@@ -25,7 +25,7 @@ const exclusionList = {
         'obom',
         'oboma',
         'oboh',
-        ['masculine/neuter', 'feminine'],
+        ['masculine/neuter', 'feminine/neuter'],
     ],
     obadva: [
         'obadva|obědvě',
@@ -34,7 +34,7 @@ const exclusionList = {
         'obadvom',
         'obadvoma',
         'obadvoh',
-        ['masculine/neuter', 'feminine'],
+        ['masculine/neuter', 'feminine/neuter'],
     ],
     obydva: [
         'obydva|obydvě',
@@ -43,7 +43,7 @@ const exclusionList = {
         'obydvom',
         'obydvoma',
         'obydvoh',
-        ['masculine/neuter', 'feminine'],
+        ['masculine/neuter', 'feminine/neuter'],
     ],
     tri: ['tri', 'trěh / tri', 'trěh', 'trěm', 'trěmi', 'trěh', ['plural']],
     cetyri: [
@@ -172,24 +172,25 @@ function declensionNumeral(rawWord, numeralType) {
     const word = getLatin(rawWord);
     let declensionType = '';
     let details = '';
+    const isCollectiveExclusion = numeralType === 'collective' && (word === 'oba' || word === 'obadva' || word === 'obydva');
+    const isCardinalExclusion = numeralType === 'cardinal' && word !== 'oba' && word !== 'obadva' && word !== 'obydva';
+    if ((isCollectiveExclusion || isCardinalExclusion) && exclusionList[word]) {
+        const columns = exclusionList[word][6];
+        return {
+            type: 'noun',
+            columns: exclusionList[word][6],
+            cases: {
+                nom: getExclusionForm(word, 0, columns.length),
+                acc: getExclusionForm(word, 1, columns.length),
+                gen: getExclusionForm(word, 2, columns.length),
+                loc: getExclusionForm(word, 5, columns.length),
+                dat: getExclusionForm(word, 3, columns.length),
+                ins: getExclusionForm(word, 4, columns.length),
+            },
+        };
+    }
     if (numeralType === 'cardinal') {
-        // work with exclusion list
-        if (exclusionList[word]) {
-            const columns = exclusionList[word][6];
-            return {
-                type: 'noun',
-                columns: exclusionList[word][6],
-                cases: {
-                    nom: getExclusionForm(word, 0, columns.length),
-                    acc: getExclusionForm(word, 1, columns.length),
-                    gen: getExclusionForm(word, 2, columns.length),
-                    loc: getExclusionForm(word, 5, columns.length),
-                    dat: getExclusionForm(word, 3, columns.length),
-                    ins: getExclusionForm(word, 4, columns.length),
-                },
-            };
-        }
-        else if (word === 'jedin') {
+        if (word === 'jedin') {
             declensionType = 'adjective';
         }
         else if (word.match(/[tm]$/)) {

@@ -236,7 +236,8 @@ function declensionPronoun(rawWord, pronounType) {
             },
         };
     }
-    else if (pronounType === 'possessive' && (word === 'jejin' || word === 'jeji')) {
+    else if (pronounType === 'possessive' &&
+        (word === 'jejin' || word === 'jeji')) {
         // Specialna deklinacija za prisvojitelny zaimennik "jejin"
         // Korenj izměnjaje se iz "jejin-" do "jej-" v večinstvu form
         return {
