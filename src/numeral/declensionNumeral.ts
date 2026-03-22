@@ -22,7 +22,7 @@ const exclusionList = {
     'dvom',
     'dvoma',
     'dvoh',
-    ['masculine', 'feminine/neuter'],
+    ['masculine/neuter', 'feminine'],
   ],
   oba: [
     'oba|obě',
@@ -31,7 +31,7 @@ const exclusionList = {
     'obom',
     'oboma',
     'oboh',
-    ['masculine', 'feminine/neuter'],
+    ['masculine/neuter', 'feminine'],
   ],
   obadva: [
     'obadva|obědvě',
@@ -40,7 +40,7 @@ const exclusionList = {
     'obadvom',
     'obadvoma',
     'obadvoh',
-    ['masculine', 'feminine/neuter'],
+    ['masculine/neuter', 'feminine'],
   ],
   obydva: [
     'obydva|obydvě',
@@ -49,7 +49,7 @@ const exclusionList = {
     'obydvom',
     'obydvoma',
     'obydvoh',
-    ['masculine', 'feminine/neuter'],
+    ['masculine/neuter', 'feminine'],
   ],
   tri: ['tri', 'trěh / tri', 'trěh', 'trěm', 'trěmi', 'trěh', ['plural']],
   cetyri: [

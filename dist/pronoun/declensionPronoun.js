@@ -242,8 +242,8 @@ function declensionPronoun(rawWord, pronounType) {
         return {
             type: 'adjective',
             casesSingular: {
-                nom: ['jejin', 'jejna', 'jejno'],
-                acc: ['jejnogo / jejin', 'jejnu', 'jejnogo / jejno'],
+                nom: ['jejin', 'jejno', 'jejna'],
+                acc: ['jejnogo / jejin', 'jejno', 'jejnu'],
                 gen: ['jejnogo', 'jejnoj'],
                 loc: ['jejnom', 'jejnoj'],
                 dat: ['jejnomu', 'jejnoj'],
